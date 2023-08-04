@@ -1,0 +1,122 @@
+.flite-nav{
+    height: 70px;
+
+    background-color: #003580;
+}
+.filte-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:300px;
+    margin:2% 10%;
+    width:80%;
+    margin-top: -5%;
+    color: gray;
+}
+.card{
+    height:250px;
+    width:340px
+}
+.filte-container img{
+    height:100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.filte-container h1{
+    font-size: 15px;
+    text-align: center;
+    padding:10px;
+}
+.Flight-search{
+    margin:4% 10%;
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flight-search-container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap:20px;
+    flex-direction: column;
+
+}
+.flight-search-container input{
+    padding:20px 30px;
+    width:100%;
+    font-size: 18px;
+}
+
+.flight-btn{
+    background-color: #003580;
+    color: #fff;
+    padding: 23px 70px;
+    transform: translateY(20px);
+
+}
+.api{
+    border: 1px solid #003580;
+    margin: 40px;
+    padding: 20px;
+}
+.api span{
+margin: 20px;
+font-size: 17px;
+font-weight: normal;
+}
+.flight-book{
+    margin:  5% 10%;
+    width: 80%;
+}
+
+.table {
+    font-family: arial, sans-serif;
+    width: 100%;
+    
+}
+
+td,
+th {
+    
+    width: 400px;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #003580;
+    color: #fff;
+
+
+}
+.headeer-container {
+    width: 100%;
+    padding: 2rem 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.header{
+    padding:30px 0;
+}
+
+
+.book-now{
+    text-decoration: none;
+    color: #fff;
+    border:none;
+display: hidden;}
+
+.btn-book
+{
+    width: 100px;
+    height: 50px;
+    background-color: #0b64e1;    color: #fff;
+}
+.btn-book:hover{
+     background-color: #0e71fc;
+     color: #fff;
+}

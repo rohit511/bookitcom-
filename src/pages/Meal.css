@@ -1,0 +1,155 @@
+
+.meal-header{
+    margin:3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:500px;
+}
+
+.mealHeading{
+    width:40%;
+
+}
+.mealHeading h1{
+    font-size:57px;
+    font-weight: bold;
+    color:#003580;
+    
+}
+
+.mealHeading span {
+    color: #febb02;
+    font-style: italic;
+}
+.meal-image{
+    display: flex;
+    align-items: flex-end;
+}
+.meal-image img{
+    height:500px;
+    width:600px;
+}
+.meal-content{
+    margin:30px 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    color:grey;
+    font-weight: 400;
+}
+.meal-gallary{
+    margin: 30px;
+}
+.meal-gallary h1{
+    font-size: 55px;
+    margin:60px;
+    text-align: center;
+        color: #003580;
+
+}
+.meal-gallary span{
+    color: #febb02;
+        font-style: italic;
+}
+
+.meal-gallary-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.meal-gallary-image img{
+    height:400px;
+    width:600px;
+    transition: transform .2s linear;
+}
+.meal-gallary-image img:hover{
+    
+    transform: rotate(20deg) scale(1.1);
+   
+    
+}
+
+.menu-heading{
+    margin:90px;
+    text-align: center;
+    color: #003580;
+font-size:30px;
+
+}
+
+.menu-heading span{
+    color: #febb02;
+    font-style: italic;
+}
+
+
+
+
+.menu-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    flex-wrap: wrap;
+}
+
+.menu-content{
+    height:580px;
+    width:400px;
+    border: 2px solid rgb(206, 202, 202);
+    box-shadow: 10px 10px 6px .4px rgba(159, 158, 158, 0.4);
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+
+.menu-content img{
+    height:50%;
+    width:90%;
+    margin:5%;
+    box-shadow:  0 0 0 1px rgba(159, 158, 158, 0.4);
+    
+}
+
+.menu-item1{
+    font-size: 30px;
+    color: #febb02;
+    text-align: center;
+    font-weight: 700;
+    margin: 4px;
+}
+
+.menu-price{
+    text-align: center;
+    margin: 4px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.menu-btn{
+    margin:4px;
+    padding: 13px 70px;
+    background-color: #febb02;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    
+}
+
+.menu-btn:hover{
+        box-shadow: 3px 3px .4px rgba(159, 158, 158, 0.4);
+
+
+}
+.menu-text{
+    margin:2px 5px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: gray;
+}

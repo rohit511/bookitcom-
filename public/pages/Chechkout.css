@@ -1,0 +1,10 @@
+.checkout{
+height:200px;
+width:100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-image: linear-gradient( #021127,#003580,rgba(49, 49, 203, 0.333));
+background-color: red;
+}
+
