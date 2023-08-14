@@ -2,9 +2,9 @@ import "./Home.css";
 
 import React from "react";
 
-import Footer from "../Components/Footer";
-import Header from "../Components/Header";
-import Navbar from "../Components/Navbar";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import Navbar from "../../Components/Navbar/Navbar";
 
 export default function Home() {
   return (

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./Meal.css";
 
 import React from "react";
@@ -161,8 +162,9 @@ function Meal() {
             <p className="menu-item1">Juice</p>
             <p className="menu-text">
               Apple juice is fairly self-explanatory: it's the juice pressed out
-              of an apple. It's rarely flavored beyond its natural state, and
-              it's mainly enjoyed cold, though it can be stored in or out .
+              of an apple. It's rarely flavored beyond its natural state, and //
+              eslint-disable-next-line react/no-unescaped-entities it's mainly
+              enjoyed cold, though it can be stored in or out .
             </p>
             <p className="menu-price">
               <strong>Price:</strong> ₹70

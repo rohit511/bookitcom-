@@ -25,7 +25,7 @@ const Login = () => {
     ) {
       localStorage.setItem("Loggedin", true);
 
-      navigate("/home");
+      navigate("/");
     } else {
       Swal.fire({
         title: "fail",
@@ -37,8 +37,6 @@ const Login = () => {
   };
   return (
     <div className="Register">
-      <img src="https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" />
-
       <form onSubmit={Login}>
         <h1 style={{ color: "#003580" }}>SignIn To Account</h1>
 
@@ -62,10 +60,10 @@ const Login = () => {
             onChange={handleInputChange}
           />
         </div>
-        <NavLink to="/" className="registerbtn" onClick={Login}>
+        <NavLink to="/" className="regbtn" onClick={Login}>
           Login
         </NavLink>
-        <div>
+        <div className="t">
           No account ?<NavLink to="/register"> Register</NavLink>
         </div>
       </form>

@@ -24,8 +24,6 @@ const Register = () => {
 
   return (
     <div className="Register">
-      <img src="https://images.unsplash.com/photo-1483401757487-2ced3fa77952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1173&q=80" />
-
       <form onSubmit={handleSubmit}>
         <h1 style={{ color: "#003580" }}>Create An Account</h1>
         <div className="ctn">
@@ -55,15 +53,20 @@ const Register = () => {
             name="password"
             value={input.password}
             onChange={handleInputChange}
+            className="pass"
             id="password"
           />
         </div>
-        <NavLink className="registerbtn" onClick={handleSubmit}>
+        <NavLink className="regbtn" onClick={handleSubmit}>
           {" "}
           Register
         </NavLink>
         <div className="t">
-          Already have account ?<NavLink to="/login">Signin</NavLink>
+          Already have account ?
+          <NavLink to="/login" style={{ textDecoration: "none" }}>
+            {" "}
+            Signin
+          </NavLink>
         </div>
       </form>
     </div>

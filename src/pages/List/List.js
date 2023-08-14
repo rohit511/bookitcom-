@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./list.css";
 
 import { format } from "date-fns";
@@ -5,10 +6,11 @@ import React from "react";
 import { useState } from "react";
 import { DateRange } from "react-date-range";
 import { NavLink, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-import SearchItem from "../Components/SearchItem";
-import Chechkout from "./Checkout";
+import SearchItem from "../../Components/SearchItem";
+import Chechkout from "../Checkout/Checkout";
 
 export default function List() {
   const location = useLocation();
@@ -182,7 +184,7 @@ export default function List() {
             <button>Search</button>
           </div>
           <div className="listResult">
-            <div>
+            <div className="listResultdiv">
               <div className="searchItem">
                 <img
                   src="https://cf.bstatic.com/xdata/images/hotel/square600/261707778.webp?k=fa6b6128468ec15e81f7d076b6f2473fa3a80c255582f155cae35f9edbffdd78&o=&s=1"
@@ -383,6 +385,125 @@ export default function List() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="media-block">
+        <h1>Book your hotel</h1>
+        <div className="media-card">
+          <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+          <div className="media-cotbox">
+            <p>500m from center</p>
+            <p style={{ color: "white" }} className="media-rating">
+              8
+            </p>
+          </div>
+          <strong className="media-cancel">Fully Aircondition</strong>
+          <p> • 1 bathroom • 21m² 1 full bed</p>
+          <em className="media-cancel">Free cancellation</em>
+          <p className="media-cancel">You can cancel later.</p>
+          <p>
+            <strong>price: </strong>₹1223
+          </p>
+          <button
+            style={{ margin: "10px 0" }}
+            className="siCheckButton"
+            onClick={Book}
+          >
+            Pay And book Now
+          </button>
+        </div>
+        <div className="media-card">
+          <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+          <div className="media-cotbox">
+            <p>510m from center</p>
+            <p style={{ color: "white" }} className="media-rating">
+              8.3
+            </p>
+          </div>
+          <strong className="media-cancel">Fully Aircondition</strong>
+          <p> • 1 bathroom • 21m² 2 full bed</p>
+          <em className="media-cancel">Free cancellation</em>
+          <p className="media-cancel">You can cancel later.</p>
+          <p>
+            <strong>price: </strong>₹1223
+          </p>
+          <button
+            style={{ margin: "10px 0" }}
+            className="siCheckButton"
+            onClick={Book}
+          >
+            Pay And book Now
+          </button>
+        </div>
+        <div className="media-card">
+          <img src="https://images.unsplash.com/photo-1522798514-97ceb8c4f1c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+          <div className="media-cotbox">
+            <p>500m from center</p>
+            <p style={{ color: "white" }} className="media-rating">
+              8.8
+            </p>
+          </div>
+          <strong className="media-cancel">Fully Aircondition</strong>
+          <p> • 1 bathroom • 21m² 1 full bed</p>
+          <em className="media-cancel">Free cancellation</em>
+          <p className="media-cancel">You can cancel later.</p>
+          <p>
+            <strong>price: </strong>₹1223
+          </p>
+          <button
+            style={{ margin: "10px 0" }}
+            className="siCheckButton"
+            onClick={Book}
+          >
+            Pay And book Now
+          </button>
+        </div>
+        <div className="media-card">
+          <img src="https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+          <div className="media-cotbox">
+            <p>500m from center</p>
+            <p style={{ color: "white" }} className="media-rating">
+              7.4
+            </p>
+          </div>
+          <strong className="media-cancel">Fully Aircondition</strong>
+          <p> • 1 bathroom • 21m² 3 full bed</p>
+          <em className="media-cancel">Free cancellation</em>
+          <p className="media-cancel">You can cancel later.</p>
+          <p>
+            <strong>price: </strong>₹1223
+          </p>
+          <button
+            style={{ margin: "10px 0" }}
+            className="siCheckButton"
+            onClick={Book}
+          >
+            Pay And book Now
+          </button>
+        </div>
+        <div className="media-card">
+          <img src="https://images.unsplash.com/photo-1518733057094-95b53143d2a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGhvdGVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" />
+          <div className="media-cotbox">
+            <p>500m from center</p>
+            <p style={{ color: "white" }} className="media-rating">
+              8.3
+            </p>
+          </div>
+          <strong className="media-cancel">Fully Aircondition</strong>
+          <p> • 1 bathroom • 21m² 1 full bed</p>
+          <em className="media-cancel">Free cancellation</em>
+          <p className="media-cancel">You can cancel later.</p>
+          <p>
+            <strong>price: </strong>₹1223
+          </p>
+          <button
+            style={{ margin: "10px 0" }}
+            className="siCheckButton"
+            onClick={Book}
+          >
+            Pay And book Now
+          </button>
         </div>
       </div>
       {bill ? (
