@@ -5,7 +5,9 @@ import { NavLink } from "react-router-dom";
 const Feature = () => {
   return (
     <>
-      <h1 className="feature-hea">Trending cities</h1>
+      <h1 className="feature-hea" style={{ textAlign: "center" }}>
+        Trending cities
+      </h1>
       <hr className="feature-hr" />
 
       <div className="featured">

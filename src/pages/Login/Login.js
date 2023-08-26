@@ -18,10 +18,12 @@ const Login = () => {
   };
   const Login = (event) => {
     event.preventDefault();
+
     const LoggedUser = JSON.parse(localStorage.getItem("user"));
+
     if (
-      input.email === LoggedUser.email &&
-      input.password === LoggedUser.password
+      input.email === LoggedUser?.email &&
+      input.password === LoggedUser?.password
     ) {
       localStorage.setItem("Loggedin", true);
 

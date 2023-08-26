@@ -28,7 +28,7 @@ export default function Navbar() {
               alt="india-circular"
             />
             <div className="avatar">
-              {userName.name.charAt(0).toUpperCase()}
+              {userName?.name??.charAt(0).toUpperCase()}
             </div>
             <button className="register1">Login</button>
             <button className="register1">Register</button>
@@ -47,10 +47,11 @@ export default function Navbar() {
             className="contentava"
           >
             <div className="avatar">
-              {userName.name.charAt(0).toUpperCase()}
+              {userName?.name?.charAt(0).toUpperCase()}
             </div>
             <p style={{ color: "white" }}>
-              {userName.name.charAt(0).toUpperCase() + userName.name.slice(1)}
+              {userName?.name?.charAt(0).toUpperCase() +
+                userName?.name?.slice(1)}
             </p>
           </a>
           <a href="/#" className="remove">
