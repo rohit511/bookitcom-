@@ -74,4 +74,26 @@ color:white;
 }
 
 
+
+
+    form{
+    height:80vh;
+    width:80%;}
+    .regbtn{
+padding: 2px 30px;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 34%, rgba(0,212,255,1) 100%);
+display: flex;
+justify-content: center;align-items: center;
+margin: 0 20px;
+
+text-decoration: none;
+color:white;
+}
+
+.ctn input{
+    width: 100%;
+    text-align:left;
+    padding:5px 10px;
+    
+}
 }

@@ -1,0 +1,17 @@
+.cro img{
+    height: 800px;
+    width: 100%;
+
+}
+
+element.style {
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    display: none;
+}
+@media screen and (max-width:800px){
+    .cro img {
+        height: 400px;
+        width: 100%;
+    }
+}

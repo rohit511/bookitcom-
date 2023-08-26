@@ -211,9 +211,9 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color:rgb(31, 109, 157);
+		background-color: rgba(9,9,121,1) ;
 		transition: 1s;
-        
+        z-index: 100011;
 	}
     .remove2{
         display: block;
