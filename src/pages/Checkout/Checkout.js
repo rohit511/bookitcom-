@@ -30,7 +30,7 @@ function Chechkout({ price, date, options, destination }) {
             <h1>Bookit.com</h1>
           </div>
           <div className="checkout-nav">
-            <NavLink to="/home" className="link">
+            <NavLink to="/" className="link">
               Home
             </NavLink>
             <NavLink to="/flite" className="link">

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import "./Flite.css";
 import "react-datepicker/dist/react-datepicker.css";
@@ -42,21 +43,26 @@ const Flite = () => {
     from: "",
     to: "",
     departure: date,
+    price: "",
+    airline: "",
+    duration: "",
+    departureTime: "",
   });
 
   const hi = (event) => {
     setVal((prev) => ({ ...prev, [event.target.name]: event.target.value }));
     setVal((prev) => ({ ...prev, departure: date }));
   };
+  const navigate = useNavigate();
 
   const Submitti = (event) => {
     event.preventDefault();
     alert("done");
   };
 
-  // const Bookit=()=>{
-  //     navigate('../bill',{state:{val}})
-  // }
+  const Bookit = () => {
+    navigate("../bill", { state: { val } });
+  };
   useEffect(() => {
     async function y() {
       const responce = await fetch(
@@ -163,44 +169,16 @@ const Flite = () => {
                           <button
                             className="btn-book"
                             onClick={() => {
-                              // setVal(val.from=ele.from);
-                              // setVal(val.to=ele.to);
-                              // Bookit();
+                              setVal((val.from = ele.from));
+                              setVal((val.to = ele.to));
+                              setVal((val.price = ele.price));
+                              setVal((val.airline = ele.airlineName));
+                              setVal((val.duration = ele.duration));
+                              setVal(
+                                (val.departure = ele.departure.departureTime),
+                              );
 
-                              Swal.fire({
-                                title: " your flight ticket details",
-                                html: `<div>from      :    ${ele.from}</div>\n
-                                                                 <div>to   :   ${ele.to}</div>\n
-                                                            <div>return   :   ${ele.return.returnTime}</div>\n
-                                                            <div>via   :   ${ele.via}</div>\n
-                                                            <div>duration   :   ${ele.duration}</div>\n
-                                                            <div>departure   :   ${ele.departure.departureTime}</div>\n
-                                                            <div>airline      :   ${ele.airlineName}</div>\n
-                                                            <div>price  :   ₹${ele.price}</div>\n
-                                                            
-                                                           
-                                                            
-                                                            
-
-                                                            
-                                                            
-                                                            
-                                                            `,
-
-                                icon: "info",
-                                showCancelButton: true,
-                                confirmButtonText: `flight price ₹${ele.price}`,
-                              }).then(function (result) {
-                                if (result.value) {
-                                  Swal.fire(
-                                    "Bokked!",
-                                    `Your flight booked.₹ ${ele.price}
-                                                                   
-                                                                    `,
-                                    "success",
-                                  );
-                                }
-                              });
+                              Bookit();
                             }}
                           >
                             Book{" "}
